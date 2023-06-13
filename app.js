@@ -1,11 +1,14 @@
 let home = 0
 let away = 0
+let home3 = (0 + 3)
 
 let userInput = ''
 
 let homeScoreElement = document.getElementById('homeScore')
 console.log('home score element', homeScoreElement);
 homeScoreElement.innerText = userInput
+
+
 
 
 function selectHomePoints() {
@@ -17,22 +20,28 @@ function selectHomePoints() {
 }
 
 function selectHomePointsThree() {
-  let home = 0
+  let home = (0 + 3)
   userInput++
-  console.log('Button Connected', userInput);
+  let homeScoreElement = document.getElementById('homeScore')
+  console.log('home score element', homeScoreElement);
+  homeScoreElement.innerText = userInput
 }
 
 function selectAwayPoints() {
-  let home = 0
+  let away = 0
   userInput++
-  console.log('Button Connected', userInput);
+  let awayScoreElement = document.getElementById('awayScore')
+  console.log('away score element', awayScoreElement);
+  awayScoreElement.innerText = userInput
 }
 
-function selectAwayPointsThree() {
-  let home = 0
-  userInput++
-  console.log('Button Connected', userInput);
-}
+// function selectAwayPointsThree() {
+//   let away = 0
+//   userInput++
+//   let awayScoreElement = document.getElementById('awayScore')
+//   console.log('away score element', awayScoreElement);
+//   awayScoreElement.innerText = userInput
+// }
 
 
 
